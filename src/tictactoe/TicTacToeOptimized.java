@@ -1,11 +1,19 @@
 package tictactoe;
 
-public class TicTacToe {
+public class TicTacToeOptimized {
 
     private final int [][] board;
+    private int row[];
+    private int col[];
+    private int dia[];
+    private int revDiag[];
 
-    public TicTacToe(final int n){
+    public TicTacToeOptimized(final int n){
         board = new int[n][n];
+        row = new int [n];
+        col = new int[n];
+        dia = new int[n];
+        revDiag = new int[n];
     }
 
 
